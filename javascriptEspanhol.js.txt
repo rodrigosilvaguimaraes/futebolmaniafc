@@ -1,0 +1,40 @@
+// JavaScript Document
+jQuery(document).ready(function(){
+
+cont=1;
+var img = Array();
+img[1] = "totterham.jpg";
+img[2] = "aston_villa.jpg";
+img[3] = "camisa_manchesterUnited.jpg";
+
+
+
+var legenda = Array();
+legenda[1] = "Camisa Totterham";
+legenda[2] = "Camisa Aston Villa";
+legenda[3] = "Camisa Manchester Unided";
+
+
+	jQuery("#dir").click(function(){
+		if(cont==3) cont=1; else cont++;
+		jQuery("#gdeIngles").fadeOut().attr("src",img[cont]);
+		jQuery("#legenda").html(legenda[cont]);
+		jQuery("#gdeIngles").fadeIn();
+	});
+	
+	jQuery("#esq").click(function(){
+		if(cont==1) cont=3; else cont--;
+		jQuery("#gdeIngles").fadeOut().attr("src",img[cont]);
+		jQuery("#legenda").html(legenda[cont]);
+		jQuery("#gdeIngles").fadeIn();
+	});
+	
+	jQuery("#dir").trigger("click");
+	
+	});
+	
+	
+	
+	
+	
+	
