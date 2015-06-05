@@ -1,0 +1,67 @@
+<html>
+    <head>
+		<META HTTP-EQUIV="Content-Language" CONTENT="pt-br">
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <title>Site empresa Rodrigo</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="javascript.js"></script>
+        <script type="text/javascript" src="jssor.slider.min.js"></script>
+		<script>
+            jQuery(document).ready(function ($) {
+                var options = { 
+					$AutoPlay: true
+				};
+                var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+				var jssor_slider2 = new $JssorSlider$('slider2_container', options);
+            });
+        </script>
+    </head>
+    
+    <body>
+        <!-- TOPO -->
+        <div id="topo">
+            <!-- LOGOMARCA -->
+            <div id="logo">
+            	<img  src="logo.jpg" />
+            </div>
+            <!-- BANNER -->
+            <div id="banner_topo">
+            	<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 850px; height: 150px;">
+                    <!-- Slides Container -->
+                    <div u="slides" style="cursor: pointer; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 850px; height: 150px;">
+                        <div><img u="image" src="banner1.jpg" style="width:100%"/></div>
+                        <div><img u="image" src="banner2.jpg" style="width:100%"/></div>
+                        <div><img u="image" src="banner3.jpg" style="width:100%"/></div>
+                    </div>
+                </div>
+            </div>
+            <!-- MENU -->
+            <div id="menu">
+            	<ul>
+                	<li><a href="index.html">Home</a></li>
+                    <li><a href="quem_somos.html">Quem Somos</a></li>
+                    <li><a href="camisas.html">Produtos</a></li>
+                    <li><a href="contatos.html">Contato</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <!-- FIM TOPO -->
+        
+        <!-- FULL BANNER -->
+        <div id="fullbanner">
+         	<div id="foto">
+				<img class="foto_rodrigo" src="foto_perfil.jpg" />
+			</div>
+			<div id="texto">
+				<h1> Quem Somos ?</h1>
+				<p>Somos uma lojas de artigos esportivos e vendemos camisa de futebol de qualquer time é só entra em nosso  site e faça sua incomenda. </p>
+			</div>
+        </div>
+        <!-- RODAPÃ‰ -->
+        <div id="rodape">
+            rodape
+        </div>
+    </body>
+</html>

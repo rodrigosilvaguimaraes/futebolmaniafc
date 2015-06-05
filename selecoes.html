@@ -1,0 +1,81 @@
+<html>
+    <head>
+		<META HTTP-EQUIV="Content-Language" CONTENT="pt-br">
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+        <title>Site empresa Rodrigo</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="jquery-1.7.2.min.js"></script>
+        <script type="text/javascript" src="javascriptSelecao.js"></script>
+        <script type="text/javascript" src="jssor.slider.min.js"></script>
+		<script>
+            jQuery(document).ready(function ($) {
+                var options = { 
+					$AutoPlay: true
+				};
+                var jssor_slider1 = new $JssorSlider$('slider1_container', options);
+				//var jssor_slider2 = new $JssorSlider$('slider2_container', options);
+            });
+        </script>
+    </head>
+    
+    <body>
+        <!-- TOPO -->
+        <div id="topo">
+            <!-- LOGOMARCA -->
+            <div id="logo">
+            	<img  src="logo.jpg" />
+            </div>
+            <!-- BANNER -->
+            <div id="banner_topo">
+            	<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 850px; height: 150px;">
+                    <!-- Slides Container -->
+                    <div u="slides" style="cursor: pointer; position: absolute; overflow: hidden; left: 0px; top: 0px; width: 850px; height: 150px;">
+                        <div><img u="image" src="banner1.jpg" style="width:100%"/></div>
+                        <div><img u="image" src="banner2.jpg" style="width:100%"/></div>
+                        <div><img u="image" src="banner3.jpg" style="width:100%"/></div>
+                    </div>
+                </div>
+            </div>
+            <!-- MENU -->
+            <div id="menu">
+            	<ul>
+                	<li><a href="index.html">Home</a></li>
+                    <li><a href="quem_somos.html">Quem Somos</a></li>
+                    <li><a href="camisas.html">Produtos</a></li>
+                    <li><a href="contatos.html">Contato</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <!-- FIM TOPO -->
+        
+        <!-- FULL BANNER -->
+       <div id="fullbanner">
+         	<div id="galeria">
+				<!-- flexa_esquerda -->
+				<div id="flexa_esq">
+					<a href="#" class="lado" id="esq">
+						<img src="esq.jpg" alt="" id="esq" class="flecha" >
+					</a>
+						
+				</div>	
+				
+				<div id="imagem" >
+					<img src="" id="gdeSelecao" alt="" />
+						<div id="legenda">
+							Motos.
+						</div>
+				</div>
+				
+				<div id="flexa_dir">
+					<a href="#" class="lado" id="dir">
+						<img src="dir.jpg" id="dir" alt="" class="flecha">
+					</a>
+				</div>
+			
+			</div>
+        </div>
+        <!-- RODAPÃ -->
+		
+    </body>
+</html>
